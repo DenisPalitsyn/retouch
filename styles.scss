@@ -41,7 +41,8 @@ nav {
         align-items: center;
     }
 
-    div {
+    .nav-item {
+        text-decoration: none;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -62,7 +63,7 @@ nav {
         &:hover {
             transform: scale(1.05);
 
-            span {
+            & > span {
                 color: var(--primary);
             }
         }
@@ -78,7 +79,7 @@ nav {
             }
         }
 
-        span {
+        & > span {
             margin-left: 10px;
             font-weight: 600;
             color: var(--black);

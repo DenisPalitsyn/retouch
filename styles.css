@@ -43,7 +43,8 @@ nav {
     align-items: center;
   }
 }
-nav div {
+nav .nav-item {
+  text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -52,33 +53,33 @@ nav div {
   cursor: pointer;
   margin-right: 1rem;
 }
-nav div:last-child {
+nav .nav-item:last-child {
   margin-right: 0;
   margin-bottom: 0;
 }
 @media screen and (max-width: 900px) {
-  nav div {
+  nav .nav-item {
     margin-bottom: 0;
   }
 }
-nav div:hover {
+nav .nav-item:hover {
   transform: scale(1.05);
 }
-nav div:hover span {
+nav .nav-item:hover > span {
   color: var(--primary);
 }
-nav div img {
+nav .nav-item img {
   display: block;
   width: 30px;
   height: 30px;
 }
 @media screen and (max-width: 900px) {
-  nav div img {
+  nav .nav-item img {
     width: 25px;
     height: 25px;
   }
 }
-nav div span {
+nav .nav-item > span {
   margin-left: 10px;
   font-weight: 600;
   color: var(--black);
