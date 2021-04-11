@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elena Smolyakova</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hi
+<header>
+    <div class="container">
+        <nav>
+            <div>
+                <img src="./assets/img/inst.svg" alt="inst">
+                <span>inst</span>
+            </div>
+            <div>
+                <img src="./assets/img/vk.svg" alt="vk">
+                <span>vk</span>
+            </div>
+        </nav>
+        <div class="hello">
+            <img src="./assets/img/elena.jpg" alt="elena">
+            <div>
+                <span>Elena</span>
+                <span>Smolyakova</span>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="grid">
+    </div>
+</main>
+<script>
+    (() => {
+        const grid = document.querySelector(".grid");
+        const photos = [
+            "./assets/img/photo-1.jpg",
+            "./assets/img/photo-2.jpg",
+            "./assets/img/photo-3.jpg",
+            "./assets/img/photo-4.jpg",
+            "./assets/img/photo-5.jpg",
+            "./assets/img/photo-6.jpg",
+            "./assets/img/photo-7.jpg",
+            "./assets/img/photo-8.jpg",
+        ];
+        photos.forEach((photo, index) => {
+            const img = document.createElement("img");
+            img.setAttribute("src", photo);
+            img.setAttribute("alt", "photo" + index);
+            grid.appendChild(img);
+        });
+    })();
+</script>
 </body>
 </html>
